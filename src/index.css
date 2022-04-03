@@ -1,5 +1,9 @@
 @import-normalize;
 
+:root {
+  --tab: 24px;
+}
+
 * {
   font-family: sans-serif;
   color: white;
@@ -40,4 +44,16 @@ body {
 .example-link:hover {
   color: #61dafb;
   border-color: #61dafb;
+}
+
+.example-2 .child-1 {
+  margin-left: var(--tab);
+}
+
+.example-2 .child-2 {
+  margin-left: calc(var(--tab) * 2);
+}
+
+.example-2 .child-3 {
+  margin-left: calc(var(--tab) * 3);
 }
