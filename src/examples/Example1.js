@@ -31,6 +31,8 @@ export default function Example1() {
 
   return (
     <div>
+      <h1>Example 1: Fetch data from api</h1>
+
       {loading && <b>Loading...</b>}
 
       {error && (
@@ -42,19 +44,20 @@ export default function Example1() {
       {movie && (
         <div>
           <div>
-            <b>Tên phim:</b> {movie.nameEn}
+            <b>Name:</b> {movie.nameEn}
           </div>
 
           <hr />
 
           <div>
-            <b>Ngày ra mắt:</b> {moment(movie.releaseDate).format('DD/MM/YYYY')}
+            <b>Release date:</b>{' '}
+            {moment(movie.releaseDate).format('DD/MM/YYYY')}
           </div>
 
           <hr />
 
           <div>
-            <b>Nội dung:</b> {movie.summary}
+            <b>Summary:</b> {movie.summary}
           </div>
         </div>
       )}
