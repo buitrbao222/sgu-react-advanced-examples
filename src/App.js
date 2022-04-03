@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Example1 from './example-1/Example1';
 import Example2 from './example-2/Example2';
 import Example3 from './example-3/Example3';
+import Example4 from './example-4/Example4';
 import Home from './Home';
 import axios from 'axios';
 
@@ -17,6 +18,8 @@ export default function App() {
       <Route path="/2" element={<Example2 />} />
 
       <Route path="/3" element={<Example3 />} />
+
+      <Route path="/4" element={<Example4 />} />
     </Routes>
   );
 }
