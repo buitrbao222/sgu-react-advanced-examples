@@ -1,3 +1,14 @@
+import { Routes, Route } from 'react-router-dom';
+import Example1 from './examples/Example1';
+import Home from './Home';
+import './axiosConfig';
+
 export default function App() {
-  return <div>hello world</div>;
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+
+      <Route path="/1" element={<Example1 />} />
+    </Routes>
+  );
 }
