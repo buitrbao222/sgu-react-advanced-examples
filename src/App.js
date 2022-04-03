@@ -1,7 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Example1 from './examples/Example1';
 import Home from './Home';
-import './axiosConfig';
 
 export default function App() {
   return (

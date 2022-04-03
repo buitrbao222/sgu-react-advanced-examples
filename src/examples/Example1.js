@@ -2,6 +2,8 @@ import axios from 'axios';
 import moment from 'moment';
 import { useEffect, useState } from 'react';
 
+axios.defaults.baseURL = process.env.REACT_APP_BACKEND;
+
 export default function Example1() {
   const [loading, setLoading] = useState(false);
 
@@ -15,7 +17,7 @@ export default function Example1() {
     try {
       const response = await axios.get('/movie/filter');
 
-      setMovie(response[0]);
+      setMovie(response.data[0]);
     } catch (error) {
       setError(error);
     } finally {
