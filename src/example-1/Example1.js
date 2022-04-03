@@ -2,8 +2,6 @@ import axios from 'axios';
 import moment from 'moment';
 import { useEffect, useState } from 'react';
 
-axios.defaults.baseURL = process.env.REACT_APP_BACKEND;
-
 export default function Example1() {
   const [loading, setLoading] = useState(false);
 
