@@ -6,17 +6,13 @@
 
 * {
   font-family: sans-serif;
-  color: white;
-}
-
-button {
-  color: black;
 }
 
 body {
   margin: 0;
   background: #20232a;
   min-height: 100vh;
+  color: white;
 }
 
 #root {
@@ -56,4 +52,8 @@ body {
 
 .example-2 .child-3 {
   margin-left: calc(var(--tab) * 3);
+}
+
+.factorial-input {
+  margin: 0 10px;
 }
